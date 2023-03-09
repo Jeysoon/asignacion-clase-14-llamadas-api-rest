@@ -1,0 +1,10 @@
+<mat-form-field appearance="fill">
+  <mat-label>Select a size</mat-label>
+  <mat-select (selectionChange)="onSelect($event)">
+    <mat-option *ngFor="let size of sizes" [value]="size">
+      {{size}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+

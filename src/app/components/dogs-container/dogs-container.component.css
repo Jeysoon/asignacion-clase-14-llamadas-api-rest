@@ -1,0 +1,17 @@
+/* Set a fixed width and height for the images in the grid */
+.mat-grid-tile img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover; /* Make sure the images fill the container without distorting their aspect ratio */
+}
+.small-devices{
+  width: 70vw;
+}
+.desktop{
+  width: 200px;
+}
+.size-selector{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}

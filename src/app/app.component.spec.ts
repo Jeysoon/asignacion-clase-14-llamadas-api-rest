@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'llamadas-api-rest'`, () => {
+  it(`should have as title 'ProgramacionReactivaMezaGarcia'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('llamadas-api-rest');
+    expect(app.title).toEqual('ProgramacionReactivaMezaGarcia');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('llamadas-api-rest app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('ProgramacionReactivaMezaGarcia app is running!');
   });
 });

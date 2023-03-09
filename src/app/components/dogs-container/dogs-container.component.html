@@ -1,0 +1,13 @@
+<app-size-selector class="size-selector"></app-size-selector>
+<mat-grid-list [cols]="columns" rowHeight="400px">
+  <mat-grid-tile *ngFor="let dog of dogs$ | async">
+    <mat-card>
+      <img mat-card-image [src]="dog.image" [ngStyle]="{'width': columns === 1 ? '70vw' : '200px'}" alt="{{ dog.name }} image">
+      <mat-card-content>
+        <h2 mat-card-title>{{ dog.name }}</h2>
+        <p mat-card-subtitle>{{ dog.breed }}</p>
+        <p>{{ dog.weight }}, {{ dog.height }}</p>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
